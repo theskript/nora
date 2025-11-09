@@ -12,6 +12,11 @@
 </head>
 <body>
     
+    <!-- Confetti Button -->
+    <button class="confetti-trigger" onclick="createConfetti(); createBalloons();" aria-label="Celebrate with confetti">
+        🎉
+    </button>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-overlay"></div>
@@ -112,6 +117,8 @@
                     <h3 class="detail-title">Date & Time</h3>
                     <p class="detail-info">Tuesday, December 30th, 2025</p>
                     <p class="detail-subinfo">2:00 PM - 6:00 PM</p>
+                    <p class="detail-highlight">🎂 Hybrid Time: 5:00-5:30 PM</p>
+                    <p class="detail-subinfo-small">Happy Birthday song & cake cutting!</p>
                     <button class="detail-action" onclick="addToCalendar()">Add to Calendar</button>
                 </div>
 
@@ -128,6 +135,20 @@
                 </div>
 
                 <div class="detail-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="detail-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                            <polyline points="17 2 12 7 7 2"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="detail-title">Join Remotely</h3>
+                    <p class="detail-info">Can't make it in person?</p>
+                    <p class="detail-subinfo">Join us via Zoom for the cake cutting!</p>
+                    <p class="detail-highlight">5:00-5:30 PM via Zoom</p>
+                    <p class="detail-subinfo-small">Link shared with confirmed guests</p>
+                </div>
+
+                <div class="detail-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="detail-icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -150,33 +171,118 @@
             <div class="section-header" data-aos="fade-up">
                 <span class="section-label">First Year Memories</span>
                 <h2 class="section-title">A Year in Pictures</h2>
+                <p class="gallery-description">Twelve months of precious moments</p>
             </div>
             
             <div class="gallery-grid">
-                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
-                    <img src="images/nora1.jpg" alt="Nora's memories">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="50">
+                    <img src="images/month1.jpg" alt="Nora - Month 1">
                     <div class="gallery-overlay">
-                        <span class="gallery-caption">Sweet Moments</span>
+                        <span class="gallery-month">Month 1</span>
+                        <span class="gallery-caption">January 2025</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="images/month2.jpg" alt="Nora - Month 2">
+                    <div class="gallery-overlay">
+                        <span class="gallery-month">Month 2</span>
+                        <span class="gallery-caption">February 2025</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
+                    <img src="images/month3.jpg" alt="Nora - Month 3">
+                    <div class="gallery-overlay">
+                        <span class="gallery-month">Month 3</span>
+                        <span class="gallery-caption">March 2025</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="images/nora2.jpg" alt="Nora's memories">
+                    <img src="images/month4.jpg" alt="Nora - Month 4">
                     <div class="gallery-overlay">
-                        <span class="gallery-caption">Growing Up</span>
+                        <span class="gallery-month">Month 4</span>
+                        <span class="gallery-caption">April 2025</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
+                    <img src="images/month5.jpg" alt="Nora - Month 5">
+                    <div class="gallery-overlay">
+                        <span class="gallery-month">Month 5</span>
+                        <span class="gallery-caption">May 2025</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
-                    <img src="images/nora3.jpg" alt="Nora's memories">
+                    <img src="images/month6.jpg" alt="Nora - Month 6">
                     <div class="gallery-overlay">
-                        <span class="gallery-caption">Happy Times</span>
+                        <span class="gallery-month">Month 6</span>
+                        <span class="gallery-caption">June 2025</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="350">
+                    <img src="images/month7.jpg" alt="Nora - Month 7">
+                    <div class="gallery-overlay">
+                        <span class="gallery-month">Month 7</span>
+                        <span class="gallery-caption">July 2025</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
-                    <img src="images/nora4.jpg" alt="Nora's memories">
+                    <img src="images/month8.jpg" alt="Nora - Month 8">
                     <div class="gallery-overlay">
-                        <span class="gallery-caption">Pure Joy</span>
+                        <span class="gallery-month">Month 8</span>
+                        <span class="gallery-caption">August 2025</span>
                     </div>
                 </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="450">
+                    <img src="images/month9.jpg" alt="Nora - Month 9">
+                    <div class="gallery-overlay">
+                        <span class="gallery-month">Month 9</span>
+                        <span class="gallery-caption">September 2025</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="images/month10.jpg" alt="Nora - Month 10">
+                    <div class="gallery-overlay">
+                        <span class="gallery-month">Month 10</span>
+                        <span class="gallery-caption">October 2025</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="550">
+                    <img src="images/month11.jpg" alt="Nora - Month 11">
+                    <div class="gallery-overlay">
+                        <span class="gallery-month">Month 11</span>
+                        <span class="gallery-caption">November 2025</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="images/month12.jpg" alt="Nora - Month 12">
+                    <div class="gallery-overlay">
+                        <span class="gallery-month">Month 12</span>
+                        <span class="gallery-caption">December 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hybrid Event Highlight -->
+    <section class="hybrid-highlight-section" data-aos="fade-up">
+        <div class="container">
+            <div class="hybrid-highlight-box">
+                <div class="hybrid-icon">🎂</div>
+                <h2 class="hybrid-title">Join Us for the Cake Cutting!</h2>
+                <p class="hybrid-time">5:00 - 5:30 PM</p>
+                <p class="hybrid-description">Can't make it in person? No problem! Join us remotely via Zoom as we sing Happy Birthday and cut Nora's first birthday cake. Whether you're there in person or virtually, we'd love to celebrate this special moment with you!</p>
+                <div class="hybrid-options">
+                    <div class="hybrid-option">
+                        <span class="hybrid-option-icon">👥</span>
+                        <span class="hybrid-option-text">Join In Person</span>
+                    </div>
+                    <div class="hybrid-option-divider">or</div>
+                    <div class="hybrid-option">
+                        <span class="hybrid-option-icon">📹</span>
+                        <span class="hybrid-option-text">Join via Zoom</span>
+                    </div>
+                </div>
+                <p class="hybrid-note">Zoom link will be shared with confirmed guests</p>
             </div>
         </div>
     </section>
@@ -188,7 +294,7 @@
                 <div class="rsvp-header" data-aos="fade-up">
                     <span class="section-label">Join the Celebration</span>
                     <h2 class="section-title">RSVP</h2>
-                    <p class="rsvp-description">We'd love to have you there! Please let us know if you can join us.</p>
+                    <p class="rsvp-description">We'd love to have you there! Please let us know if you can join us in person or via Zoom.</p>
                 </div>
                 
                 <div class="rsvp-form-container" data-aos="fade-up" data-aos-delay="200">
@@ -199,6 +305,9 @@
                     <input type="hidden" name="autoresponse" value="Thank you for your RSVP to Nora's 1st Birthday Party! 🎉
 
 We've received your response and can't wait to celebrate with you on December 30th, 2025 from 2:00 PM - 6:00 PM in Wesley Chapel, FL.
+
+🎂 SPECIAL HYBRID TIME: 5:00-5:30 PM
+Join us in person or via Zoom as we sing Happy Birthday and cut the cake! Zoom link will be sent to confirmed guests closer to the event.
 
 If you have any questions, feel free to reach out:
 📧 info@theskript.com
@@ -230,7 +339,8 @@ The Rahim Family">
                                 <label for="attending">Will you attend? *</label>
                                 <select id="attending" name="attending" required>
                                     <option value="">Select...</option>
-                                    <option value="yes">✓ Yes, I'll be there!</option>
+                                    <option value="yes-inperson">✓ Yes, I'll be there in person!</option>
+                                    <option value="yes-zoom">📹 Yes, joining via Zoom (5:00-5:30 PM)</option>
                                     <option value="no">✗ Sorry, can't make it</option>
                                 </select>
                             </div>
