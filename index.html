@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nora's 1st Birthday Celebration 🎂</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <div class="hero-badge">🎂 First Birthday</div>
+            <h1 class="hero-title">Nora</h1>
+            <div class="hero-subtitle">is turning <span class="hero-number">ONE</span></div>
+            <p class="hero-tagline">Join us for a day of joy, laughter, and celebration</p>
+            <div class="hero-cta">
+                <a href="#rsvp" class="btn-primary">RSVP Now</a>
+                <a href="#details" class="btn-secondary">Event Details</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section">
+        <div class="container">
+            <div class="story-grid" data-aos="fade-up">
+                <div class="story-text">
+                    <span class="story-label">Our Little Star</span>
+                    <h2 class="section-title">A Year of Wonder</h2>
+                    <p class="story-description">
+                        One year ago, Nora came into our lives and filled every moment with pure joy. 
+                        From her first smile to her first steps, we've cherished every milestone. 
+                        Now it's time to celebrate this incredible journey with the people we love most.
+                    </p>
+                    <div class="story-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">365</div>
+                            <div class="stat-label">Days of Joy</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Memories Made</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1</div>
+                            <div class="stat-label">Amazing Year</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-image" data-aos="fade-left" data-aos-delay="200">
+                    <img src="images/nora1.jpg" alt="Nora's first year">
+                    <div class="image-frame"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="countdown-title">The Big Day is Coming!</h2>
+            <div class="countdown-timer" id="countdown">
+                <div class="countdown-box">
+                    <div class="countdown-number" id="days">0</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-number" id="hours">0</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-number" id="minutes">0</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-number" id="seconds">0</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section class="details-section" id="details">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Party Information</span>
+                <h2 class="section-title">Event Details</h2>
+            </div>
+            
+            <div class="details-grid">
+                <div class="detail-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="detail-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3 class="detail-title">Date & Time</h3>
+                    <p class="detail-info">Tuesday, December 30th, 2025</p>
+                    <p class="detail-subinfo">2:00 PM - 6:00 PM</p>
+                    <button class="detail-action" onclick="addToCalendar()">Add to Calendar</button>
+                </div>
+
+                <div class="detail-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="detail-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="detail-title">Location</h3>
+                    <p class="detail-info">Wesley Chapel, FL</p>
+                    <p class="detail-subinfo">Exact address shared with confirmed guests</p>
+                </div>
+
+                <div class="detail-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="detail-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="detail-title">Dress Code</h3>
+                    <p class="detail-info">Casual & Comfortable</p>
+                    <p class="detail-subinfo">Come as you are and ready to party!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">First Year Memories</span>
+                <h2 class="section-title">A Year in Pictures</h2>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="images/nora1.jpg" alt="Nora's memories">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Sweet Moments</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/nora2.jpg" alt="Nora's memories">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Growing Up</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="images/nora3.jpg" alt="Nora's memories">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Happy Times</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="images/nora4.jpg" alt="Nora's memories">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Pure Joy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section class="rsvp-section" id="rsvp">
+        <div class="container">
+            <div class="rsvp-wrapper">
+                <div class="rsvp-header" data-aos="fade-up">
+                    <span class="section-label">Join the Celebration</span>
+                    <h2 class="section-title">RSVP</h2>
+                    <p class="rsvp-description">We'd love to have you there! Please let us know if you can join us.</p>
+                </div>
+                
+                <div class="rsvp-form-container" data-aos="fade-up" data-aos-delay="200">
+                    <form id="rsvp-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="103d0fef-edc6-4656-9447-b774d19daf36">
+                    <input type="hidden" name="subject" value="RSVP for Nora's 1st Birthday">
+                    <input type="hidden" name="from_name" value="Birthday RSVP Form">
+                    <input type="hidden" name="autoresponse" value="Thank you for your RSVP to Nora's 1st Birthday Party! 🎉
+
+We've received your response and can't wait to celebrate with you on December 30th, 2025 from 2:00 PM - 6:00 PM in Wesley Chapel, FL.
+
+If you have any questions, feel free to reach out:
+📧 info@theskript.com
+📱 Ahmed (Dad): (813) 568-5765
+📱 Teaka (Mom): (609) 366-0857
+
+See you soon!
+The Rahim Family">
+                    
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="attending">Will you attend? *</label>
+                                <select id="attending" name="attending" required>
+                                    <option value="">Select...</option>
+                                    <option value="yes">✓ Yes, I'll be there!</option>
+                                    <option value="no">✗ Sorry, can't make it</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="adults">Adults Attending</label>
+                                <input type="number" id="adults" name="adults" min="0" value="1">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="children">Children Attending</label>
+                                <input type="number" id="children" name="children" min="0" value="0">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dietary">Dietary Restrictions or Allergies</label>
+                            <textarea id="dietary" name="dietary" rows="2" placeholder="Let us know if you have any dietary needs..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Special Message for Nora</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Share your wishes for Nora's first birthday..."></textarea>
+                        </div>
+
+                        <button type="submit" class="rsvp-submit-btn">
+                            <span>Submit RSVP</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </form>
+                    <div id="form-status"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registry Section -->
+    <section class="registry-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Gifts & Wishes</span>
+                <h2 class="section-title">Registry & Gifting</h2>
+                <p class="registry-intro">Your presence is the greatest gift, but if you'd like to celebrate with a present...</p>
+            </div>
+            
+            <div class="registry-grid">
+                <a href="https://www.amazon.com/baby-reg/[your-registry-id]" target="_blank" class="registry-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="registry-item-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                    </div>
+                    <h3>Amazon Registry</h3>
+                    <p>Browse our curated wishlist</p>
+                    <span class="registry-link">View Registry →</span>
+                </a>
+
+                <a href="https://www.target.com/gift-registry/[your-registry-id]" target="_blank" class="registry-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="registry-item-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                            <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                        </svg>
+                    </div>
+                    <h3>Target Registry</h3>
+                    <p>Shop our Target selections</p>
+                    <span class="registry-link">View Registry →</span>
+                </a>
+
+                <div class="registry-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="registry-item-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 12v10H4V12"></path>
+                            <path d="M22 7H2v5h20V7z"></path>
+                            <path d="M12 22V7"></path>
+                            <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                            <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                        </svg>
+                    </div>
+                    <h3>Gift Suggestions</h3>
+                    <p>Books, toys, or college fund contributions</p>
+                </div>
+            </div>
+
+            <div class="cash-gift" data-aos="fade-up" data-aos-delay="400">
+                <h3>Monetary Gifts</h3>
+                <p>Prefer to contribute digitally?</p>
+                <div class="payment-methods">
+                    <div class="payment-method">
+                        <span class="payment-icon">�</span>
+                        <span class="payment-label">Cash App:</span>
+                        <strong class="payment-value">$theskriptcom</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content" data-aos="fade-up">
+                <h2>Questions?</h2>
+                <p>Feel free to reach out to us anytime!</p>
+                
+                <div class="contact-methods">
+                    <a href="mailto:info@theskript.com" class="contact-method">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>info@theskript.com</span>
+                    </a>
+                    
+                    <a href="tel:8135685765" class="contact-method">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span>Ahmed: (813) 568-5765</span>
+                    </a>
+                    
+                    <a href="tel:6093660857" class="contact-method">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span>Teaka: (609) 366-0857</span>
+                    </a>
+                </div>
+
+                <div class="social-share">
+                    <p>Share this invitation:</p>
+                    <div class="social-buttons">
+                        <button class="social-btn" onclick="shareOnWhatsApp()" aria-label="Share on WhatsApp">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                        </button>
+                        <button class="social-btn" onclick="shareOnFacebook()" aria-label="Share on Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </button>
+                        <button class="social-btn" onclick="copyLink()" aria-label="Copy link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <p id="copy-status" class="copy-message"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">Made with love for Nora's First Birthday 🎂</p>
+                <p class="footer-copyright">© 2025 The Rahim Family</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
