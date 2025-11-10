@@ -216,7 +216,9 @@ function downloadCalendarInvite(attendeeName, attendeeEmail, attendingType) {
     document.body.removeChild(link);
 }
 
-// Handle RSVP form submission with Web3Forms
+// Handle RSVP form submission - Now using Google Forms embed
+// Previous Web3Forms implementation commented out
+/*
 const form = document.getElementById('rsvp-form');
 const formStatus = document.getElementById('form-status');
 
@@ -280,6 +282,7 @@ if (form) {
         }
     });
 }
+*/
 
 // Share Functions
 function shareOnWhatsApp() {

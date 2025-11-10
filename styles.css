@@ -715,6 +715,11 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--shadow-xl);
 }
 
+.rsvp-form-container iframe {
+    border-radius: var(--radius-md);
+    min-height: 1400px;
+}
+
 .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1130,6 +1135,15 @@ h1, h2, h3, h4, h5, h6 {
     .hybrid-option {
         width: 100%;
         max-width: 300px;
+    }
+    
+    /* Make Google Forms iframe responsive on mobile */
+    .rsvp-form-container iframe {
+        min-height: 1200px;
+    }
+    
+    .rsvp-form-container {
+        padding: var(--spacing-md);
     }
 }
 
