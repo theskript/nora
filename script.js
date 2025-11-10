@@ -286,6 +286,36 @@ function shareOnFacebook() {
     window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank');
 }
 
+function shareOnInstagram() {
+    const url = window.location.href;
+    const text = "You're invited to Nora's 1st Birthday Party! 🎉 December 30, 2025";
+    // Instagram doesn't have a direct web share API, so copy link with message
+    navigator.clipboard.writeText(`${text} ${url}`).then(() => {
+        const status = document.getElementById('copy-status');
+        if (status) {
+            status.textContent = '✅ Message copied! Paste it in Instagram';
+            setTimeout(() => {
+                status.textContent = '';
+            }, 3000);
+        }
+    });
+}
+
+function shareOnTikTok() {
+    const url = window.location.href;
+    const text = "You're invited to Nora's 1st Birthday Party! 🎉 December 30, 2025";
+    // TikTok doesn't have a direct web share API, so copy link with message
+    navigator.clipboard.writeText(`${text} ${url}`).then(() => {
+        const status = document.getElementById('copy-status');
+        if (status) {
+            status.textContent = '✅ Message copied! Paste it in TikTok';
+            setTimeout(() => {
+                status.textContent = '';
+            }, 3000);
+        }
+    });
+}
+
 function copyLink() {
     const url = window.location.href;
     navigator.clipboard.writeText(url).then(() => {
