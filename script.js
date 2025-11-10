@@ -141,7 +141,7 @@ function addToCalendar() {
     const zoomLink = "https://zoom.us/j/YOUR_MEETING_ID"; // Replace with actual Zoom link
     const event = {
         title: "Nora's 1st Birthday Party",
-        description: `Join us to celebrate Nora Rahim's first birthday!%0A%0A🎂 HYBRID TIME: 5:00-5:30 PM - Cake Cutting!%0AJoin in person or via Zoom: ${zoomLink}%0A%0AContact:%0A📧 info@theskript.com%0A📱 Ahmed: (813) 568-5765%0A📱 Teaka: (609) 366-0857`,
+        description: `Join us to celebrate Nora Rahim's first birthday!%0A%0A🎂 HYBRID TIME: 2:30-3:00 PM - Cake Cutting!%0AJoin in person or via Zoom: ${zoomLink}%0A%0AContact:%0A📧 info@theskript.com%0A📱 Ahmed: (813) 568-5765%0A📱 Teaka: (609) 366-0857`,
         location: "Wesley Chapel, FL",
         start: "20251230T140000",
         end: "20251230T180000"
@@ -163,12 +163,12 @@ function generateCalendarInvite(attendeeName, attendeeEmail, attendingType) {
     let description = `Join us to celebrate Nora's first birthday!\\n\\n`;
     
     if (attendingType === 'yes-zoom') {
-        description += `You've RSVP'd to join via Zoom for the cake cutting (5:00-5:30 PM)\\n\\n`;
-        description += `🎂 HYBRID TIME: 5:00-5:30 PM\\n`;
+        description += `You've RSVP'd to join via Zoom for the cake cutting (2:30-3:00 PM)\\n\\n`;
+        description += `🎂 HYBRID TIME: 2:30-3:00 PM\\n`;
         description += `Zoom Link: ${zoomLink}\\n\\n`;
     } else {
         description += `We'll see you in person!\\n\\n`;
-        description += `🎂 Don't miss the cake cutting at 5:00 PM!\\n`;
+        description += `🎂 Don't miss the cake cutting at 2:30 PM!\\n`;
         description += `Zoom option also available: ${zoomLink}\\n\\n`;
     }
     
