@@ -138,18 +138,8 @@ updateCountdown();
 
 // Add to Calendar Function
 function addToCalendar() {
-    const zoomLink = "https://zoom.us/j/YOUR_MEETING_ID"; // Replace with actual Zoom link
-    const event = {
-        title: "Nora's 1st Birthday Party",
-        description: `Join us to celebrate Nora Rahim's first birthday!%0A%0A🎂 HYBRID TIME: 2:30-3:00 PM - Cake Cutting!%0AJoin in person or via Zoom: ${zoomLink}%0A%0AContact:%0A📧 info@theskript.com%0A📱 Ahmed: (813) 568-5765%0A📱 Teaka: (609) 366-0857`,
-        location: "Wesley Chapel, FL",
-        start: "20251230T140000",
-        end: "20251230T180000"
-    };
-    
-    const googleCalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&details=${encodeURIComponent(event.description)}&location=${encodeURIComponent(event.location)}&dates=${event.start}/${event.end}`;
-    
-    window.open(googleCalUrl, '_blank');
+    // Use the direct Google Calendar event link
+    window.open('https://calendar.app.google/yRrgE4FFADwdTUQR7', '_blank');
 }
 
 // Generate Calendar Invite (ICS file)
