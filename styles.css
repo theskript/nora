@@ -8,6 +8,117 @@
     box-sizing: border-box;
 }
 
+/* Password Protection Modal */
+.password-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #FFE8F0 0%, #FFD0E5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+.password-modal-content {
+    background: white;
+    padding: 3rem;
+    border-radius: 24px;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    width: 90%;
+    animation: modalFadeIn 0.5s ease;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.password-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.password-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #FF6B9D;
+    margin-bottom: 0.5rem;
+}
+
+.password-header p {
+    color: #718096;
+    font-size: 0.95rem;
+}
+
+.password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.password-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.password-field label {
+    font-weight: 600;
+    color: #2D3748;
+    font-size: 0.9rem;
+}
+
+.password-field input {
+    padding: 0.875rem;
+    border: 2px solid #E2E8F0;
+    border-radius: 12px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.password-field input:focus {
+    outline: none;
+    border-color: #FF6B9D;
+    box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.1);
+}
+
+.password-submit {
+    padding: 1rem;
+    background: linear-gradient(135deg, #FF6B9D 0%, #E85A8A 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.password-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(255, 107, 157, 0.3);
+}
+
+.password-error {
+    color: #E53E3E;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: -0.5rem;
+    min-height: 1.2rem;
+}
+
 :root {
     --primary: #FF6B9D;
     --primary-light: #FFB4D6;

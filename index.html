@@ -12,6 +12,29 @@
 </head>
 <body>
     
+    <!-- Password Protection Modal -->
+    <div id="password-modal" class="password-modal">
+        <div class="password-modal-content">
+            <div class="password-header">
+                <h2>🎂 Nora's 1st Birthday</h2>
+                <p>This invitation is password protected</p>
+            </div>
+            <form id="password-form" class="password-form">
+                <div class="password-field">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username" required>
+                </div>
+                <div class="password-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                </div>
+                <button type="submit" class="password-submit">Enter</button>
+                <p id="password-error" class="password-error"></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="main-content" style="display: none;">
     <!-- Confetti Button -->
     <button class="confetti-trigger" onclick="createConfetti(); createBalloons();" aria-label="Celebrate with confetti">
         🎉
@@ -451,6 +474,8 @@
             </div>
         </div>
     </footer>
+    </div>
+    <!-- End Main Content -->
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>

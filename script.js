@@ -1,12 +1,59 @@
 // Modern Birthday Invitation - JavaScript
 
-// Initialize AOS (Animate On Scroll)
-AOS.init({
-    duration: 800,
-    once: true,
-    offset: 50,
-    easing: 'ease-out-cubic'
+// ============================================
+// PASSWORD PROTECTION
+// ============================================
+
+// Check if user is already authenticated
+const isAuthenticated = sessionStorage.getItem('nora_authenticated') === 'true';
+
+if (isAuthenticated) {
+    document.getElementById('password-modal').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+}
+
+// Handle password form submission
+document.getElementById('password-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const errorElement = document.getElementById('password-error');
+    
+    // Check credentials
+    if (username === 'NORA' && password === 'NORA123') {
+        // Store authentication in session
+        sessionStorage.setItem('nora_authenticated', 'true');
+        
+        // Hide modal and show content
+        document.getElementById('password-modal').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+        
+        // Initialize AOS after content is visible
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50,
+            easing: 'ease-out-cubic'
+        });
+        
+        errorElement.textContent = '';
+    } else {
+        // Show error message
+        errorElement.textContent = '❌ Invalid username or password';
+        document.getElementById('password').value = '';
+    }
 });
+
+// Initialize AOS (Animate On Scroll) if already authenticated
+if (isAuthenticated) {
+    AOS.init({
+        duration: 800,
+        once: true,
+        offset: 50,
+        easing: 'ease-out-cubic'
+    });
+}
 
 // ============================================
 // BIRTHDAY EFFECTS - Confetti & Balloons
