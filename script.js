@@ -1,9 +1,13 @@
 // Modern Birthday Invitation - JavaScript
 
 // ============================================
-// PASSWORD PROTECTION
+// PASSWORD PROTECTION - TEMPORARILY DISABLED
 // ============================================
 
+// Password protection is currently disabled
+// To re-enable, uncomment the code below and comment out the auto-show code
+
+/*
 // Check if user is already authenticated
 const isAuthenticated = sessionStorage.getItem('nora_authenticated') === 'true';
 
@@ -54,6 +58,19 @@ if (isAuthenticated) {
         easing: 'ease-out-cubic'
     });
 }
+*/
+
+// Auto-show content without password (TEMPORARY)
+document.getElementById('password-modal').style.display = 'none';
+document.getElementById('main-content').style.display = 'block';
+
+// Initialize AOS (Animate On Scroll)
+AOS.init({
+    duration: 800,
+    once: true,
+    offset: 50,
+    easing: 'ease-out-cubic'
+});
 
 // ============================================
 // BIRTHDAY EFFECTS - Confetti & Balloons
